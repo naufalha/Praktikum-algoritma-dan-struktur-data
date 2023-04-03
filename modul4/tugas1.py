@@ -20,7 +20,8 @@ def SearchKota(kota):
     for i in Daftar:
         index +=1
         if i.kota == kota:
-            print(index)
             list.append(index)
     return list
 print(SearchKota("boyolali"))
+print("_______________________________")
+print("l200210135 Naufal Hanief Mafaza")

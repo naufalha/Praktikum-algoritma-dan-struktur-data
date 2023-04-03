@@ -39,3 +39,5 @@ def listSmollMoney():
     return smallest
 
 print(listSmollMoney())
+print("_______________________________")
+print("l200210135 Naufal Hanief Mafaza")

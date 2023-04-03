@@ -4,11 +4,8 @@ def binSe(kumpulan,target):
     index = 0
     while low <= high:
         mid = (high+low)//2
-        index = 0
         if kumpulan[mid]==target: ##jika target ada di tengah
-            index = mid
-            print(mid)
-            return True
+            return mid
         
         elif target < kumpulan[mid]: #mencari apakah kiri
             high = mid - 1
