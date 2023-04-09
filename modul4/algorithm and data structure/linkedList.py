@@ -37,11 +37,21 @@ class LinkedList:
                 return
             current = current.next
 
+
     def print_list(self):
+        string = ""
         current = self.head
         while current is not None:
-            print(current.data)
-            current = current.next
+            if current.next != None:
+                string += str(current.data) + " --> "
+                current = current.next
+            else:
+                string += str(current.data)
+                current = current.next
+                
+        print(string)
+
+
     def count_nodes(head):
         count = 0
         current = head
@@ -49,10 +59,27 @@ class LinkedList:
             count += 1
             current = current.next
         return count
+    def reverse(self):
+        prev = None
+        current = self.head
+        while current is not None:
+            next_node = current.next
+            current.next = prev
+            prev = current
+            current = next_node
+        self.head = prev
+
 
 data = ["nopal","vem","lecrec","hamilton","maxverstappen","binnoto"]
 my_list = LinkedList()
+
+##menambahkan data dari belakang
 for i in data:
     my_list.insertAtEnd(i)
 
+
+
+
+my_list.print_list()
+my_list.reverse()
 my_list.print_list()
