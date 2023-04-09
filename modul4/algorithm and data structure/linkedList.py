@@ -22,6 +22,20 @@ class LinkedList:
         new_node.next = self.head
         self.head = new_node
 
+    def add_node_in_middle(self, prev_data, data):
+        new_node = Node(data)
+        if self.head is None:
+            self.head = new_node
+            return
+
+        current = self.head
+        while current is not None:
+            if current.data == prev_data:
+                new_node.next = current.next
+                current.next = new_node
+                return
+            current = current.next
+
     def delete(self, data):
         if self.head is None:
             return
@@ -52,9 +66,9 @@ class LinkedList:
         print(string)
 
 
-    def count_nodes(head):
+    def count_nodes(self):
         count = 0
-        current = head
+        current = self.head
         while current is not None:
             count += 1
             current = current.next
@@ -81,5 +95,27 @@ for i in data:
 
 
 my_list.print_list()
+
+##menambahkan data dari depan
+my_list.insertAtStart("lewis")
+
+##menambahkan data di tengah
+my_list.add_node_in_middle("lecrec","sebastian")
+
+##menghapus data
+my_list.delete("binnoto")
+##menghapus node yang tidak ada
+my_list.delete("russel")
+
+#menampilkan node
+my_list.print_list()
+
+#menghitung jumlah node
+print(my_list.count_nodes())
+#membalikkan node
 my_list.reverse()
 my_list.print_list()
+
+
+print("=========================================")
+print("L200210135 - Naufal Hanief Mafaza")
