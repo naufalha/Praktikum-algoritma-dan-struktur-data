@@ -22,4 +22,5 @@ for i in Daftar:
     nim.append(i.nim)
 insertSort(nim)
 print(nim)
+print("L200210135  Naufal Hanief Mafaza")
 
