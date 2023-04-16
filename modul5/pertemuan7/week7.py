@@ -5,8 +5,7 @@ def searchnumbe(list, num):
         if num == list[i]:
             return i
     return -1
-
-
+print(searchnumbe([1,2,3,4,5,6,7], 3))
 
 ##no 2 mencari titik tertinggi dari sebuah list yang tidak urut
 def hilltop(list):
@@ -16,3 +15,5 @@ def hilltop(list):
             highest = i 
     return highest
 print(hilltop([1,2,3,4,5,6,7,8,9,10,21,3,2,1,23,3,3,3,5]))
+print("___________")
+print("naufal hanief mafaza l200210135")
