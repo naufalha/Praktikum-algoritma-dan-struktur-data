@@ -26,6 +26,6 @@ def partisi(A,awal,akhir):
     A[penandaKanan] = temp
     return penandaKanan
 
-list = [54,26,93,17,77,31,44,55,20]
-quickSort(list)
-print(list)
+#list = [54,26,93,17,77,31,44,55,20]
+#quickSort(list)
+#print(list)

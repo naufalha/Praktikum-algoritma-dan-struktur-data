@@ -1,5 +1,5 @@
 def mergeSort(A):
-    print("membelah ",A)
+   # print("membelah ",A)
     if len(A) > 1:
         mid = len(A)//2
         separuhKiri = A[:mid]
@@ -26,8 +26,8 @@ def mergeSort(A):
             A[k]=separuhKanan[j]
             j = j + 1
             k = k + 1
-    print("Menggabungkan ",A)
+   # print("Menggabungkan ",A)
 
-alist = [54,26,93,17,77,31,44,55,20]
-mergeSort(alist)
-print(alist)
+#alist = [54,26,93,17,77,31,44,55,20]
+#mergeSort(alist)
+#print(alist)
