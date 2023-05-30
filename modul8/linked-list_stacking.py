@@ -18,7 +18,20 @@ class StackLL(object):
     def push(self, data):
         self.top = _StackNode(data, self.top)
         self.size += 1
+    def printstack(self):
+        print("Isi stack: ")
+        node = self.top
+        while node != None:
+            print(node.item, end = " ")
+            node = node.next
+        print()
 class _StackNode(object):
     def __init__(self, data, link):
         self.item = data
         self.next = link
+
+stacking = StackLL()
+stacking.push(3)
+stacking.push(2)
+stacking.push(1)
+print(stacking.printstack())
