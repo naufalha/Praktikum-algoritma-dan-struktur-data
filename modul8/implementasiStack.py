@@ -35,5 +35,19 @@ while value > 0:
 while not myStack.isEmpty():
     value = myStack.pop()
     print(value)
-            
-            
+
+##mengubah biner ke desimal
+def cetakbiner(d):
+    f = stack()
+    if d == 0: f.push(0)
+    while d != 0:
+        sisa = d % 2
+        d = d // 2
+        f.push(sisa)
+    st = ""
+    for i in range(len(f)):
+        st = st + str(f.pop())
+    return st
+
+print("desimal to biner converter")
+print(cetakbiner(10))
