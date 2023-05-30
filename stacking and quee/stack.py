@@ -21,11 +21,19 @@ class stack():
             return None
         else:
             return self.item[-1]
-            
-    
+                
+    def palindrom(self,text):
+        for i in text:
+            self.push(i)
+        reversed_text = ""
+        for i in range(len(text)):
+            reversed_text += self.pop()
+        if text == reversed_text:
+            print("palindrom")
+        else:
+            print("bukan palindrom")
         
 
 stacking = stack()
-stacking.push("iqbal")
-stacking.push("julian")
-print(stacking.size())
+stacking.palindrom("julian")
+
