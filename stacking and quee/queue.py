@@ -14,3 +14,10 @@ class   queue:
         for i in range (len(self.item)):
             xx+=1
         return xx
+    
+    
+antri = queue()
+antri.enqueue("julian ")
+antri.enqueue("iqbal")
+
+print(antri.item)
