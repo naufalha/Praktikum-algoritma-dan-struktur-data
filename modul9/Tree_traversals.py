@@ -29,7 +29,9 @@ def preorder_traversal(subpohon):
         print(subpohon.data)
         preorder_traversal(subpohon.kiri)
         preorder_traversal(subpohon.kanan)
-preorder_traversal()
+print('preorder_traversal')
+print('=================')
+preorder_traversal(A)
 
 #inorder_traversal
 def inorder_traversal(subpohon):
