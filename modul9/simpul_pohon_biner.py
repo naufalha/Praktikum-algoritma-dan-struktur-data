@@ -23,6 +23,8 @@ B.kiri = D; B.kanan = E
 C.kiri = F; C.kanan = G
 E.kiri = H
 G.kanan = I
-print(A.kiri.kanan.data)
+xx = [A, B, C, D, E, F, G, H, I, J]
+for i in xx:
+    print(i.data)
 
         
