@@ -24,11 +24,5 @@ C.kiri = F; C.kanan = G
 E.kiri = H
 G.kanan = I
 print(A.kiri.kanan.data)
-# Path: modul9\traversal_inorder.py
-def inorder_traversal(akar):
-    if akar is not None:
-        inorder_traversal(akar.kiri)
-        print(akar.data)
-        inorder_traversal(akar.kanan)
-        
+
         
