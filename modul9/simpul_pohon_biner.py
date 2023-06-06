@@ -16,9 +16,19 @@ H = _SimpulPohonBiner('Halmahera Timur')
 I = _SimpulPohonBiner('Indramayu')
 J = _SimpulPohonBiner('Jakarta')
 
+
 # menghubungkan simpul
 A.kiri = B; A.kanan = C
 B.kiri = D; B.kanan = E
 C.kiri = F; C.kanan = G
 E.kiri = H
 G.kanan = I
+print(A.kiri.kanan.data)
+# Path: modul9\traversal_inorder.py
+def inorder_traversal(akar):
+    if akar is not None:
+        inorder_traversal(akar.kiri)
+        print(akar.data)
+        inorder_traversal(akar.kanan)
+        
+        
